@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project LDJam57Game">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}/../.."/>
+    <property name="dir.jarfile" value="${dir.buildfile}"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/game_mac.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="Kartoffel.Licht.Main"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.workspace}/LDJam57Game/target/classes"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Anwender/git/KLVulkan/.build/AGGraphics_full.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Anwender/git/KLVulkan/.build/KLVulkan_full.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Anwender/.m2/repository/org/lwjgl/lwjgl/3.3.6/lwjgl-3.3.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Anwender/.m2/repository/org/lwjgl/lwjgl-glfw/3.3.6/lwjgl-glfw-3.3.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Anwender/.m2/repository/org/lwjgl/lwjgl-opus/3.3.6/lwjgl-opus-3.3.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Anwender/.m2/repository/org/lwjgl/lwjgl-shaderc/3.3.6/lwjgl-shaderc-3.3.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Anwender/.m2/repository/org/lwjgl/lwjgl-vma/3.3.6/lwjgl-vma-3.3.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Anwender/.m2/repository/org/lwjgl/lwjgl-vulkan/3.3.6/lwjgl-vulkan-3.3.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Anwender/.m2/repository/org/lwjgl/lwjgl/3.3.6/lwjgl-3.3.6-natives-macos.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Anwender/.m2/repository/org/lwjgl/lwjgl-glfw/3.3.6/lwjgl-glfw-3.3.6-natives-macos.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Anwender/.m2/repository/org/lwjgl/lwjgl-opus/3.3.6/lwjgl-opus-3.3.6-natives-macos.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Anwender/.m2/repository/org/lwjgl/lwjgl-shaderc/3.3.6/lwjgl-shaderc-3.3.6-natives-macos.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Anwender/.m2/repository/org/lwjgl/lwjgl-vma/3.3.6/lwjgl-vma-3.3.6-natives-macos.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Anwender/.m2/repository/org/joml/joml/1.10.7/joml-1.10.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Anwender/.m2/repository/org/lwjgl/lwjgl-vulkan/3.3.6/lwjgl-vulkan-3.3.6-natives-macos.jar"/>
+        </jar>
+    </target>
+</project>
